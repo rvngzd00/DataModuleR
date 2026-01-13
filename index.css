@@ -87,6 +87,72 @@
     display: none;
     font-size: 33px;
     color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 10px;
+}
+
+.hamburger-menu:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navlogo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .navbar-section .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hamburger-menu {
+        font-size: 28px;
+        padding: 8px;
+    }
+
+    .navlogo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar-section {
+        padding: 5px 0;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .overlay .closebtn {
+        top: 15px;
+        right: 25px;
+        font-size: 50px;
+    }
+
+    .overlay-content {
+        top: 15%;
+    }
+
+    .overlay a {
+        font-size: 18px;
+        padding: 15px 0;
+    }
 }
 
 /* Footer */
@@ -320,4 +386,13 @@
     align-items: start;
     justify-content: center;
     gap: 20px;
+}
+@media (max-width: 768px) {
+.footer-card a {
+
+    font-size: 12px;
+}
+.nav-menu{
+    display: none;
+}
 }
