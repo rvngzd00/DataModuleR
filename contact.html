@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Data Module</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+
+
+   <!-- fontAwsome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/siteLogo.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <!-- Styles  -->
+   <link rel="stylesheet" href="./reset.css">
+   <link rel="stylesheet" href="./index.css">
+   <link rel="stylesheet" href="./contact.css">
+</head>
+
+<body>
+   <!-- Navbar -->
+   <div class="navbar-section">
+      <div class="container">
+         <div class="navbar">
+            <div class="logo-section">
+               <div class="navlogo"><a href="index.html"><img src="./images/siteLogo.png"></a></div>
+            </div>
+            <div class="nav-menu">
+               <a class="nav-menu-item" href="index.html">HOME</a>
+               <a class="nav-menu-item" href="about.html">ABOUT</a>
+               <a class="nav-menu-item" href="services.html">SERVICES</a>
+               <a class="nav-menu-item" href="projects.html">PROJECTS</a>
+               <a class="nav-menu-item" href="contact.html">CONTACT US</a>
+               <div id="myNav" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <div class="overlay-content">
+                     <a href="index.html">HOME</a>
+                     <a href="about.html">ABOUT</a>
+                     <a href="services.html">SERVICES</a>
+                     <a href="projects.html">PROJECTS</a>
+                     <a href="contact.html">CONTACT US</a>
+                  </div>
+               </div>
+               <span class="hamburger-menu" onclick="openNav()">
+                  <i class="fa-solid fa-bars"></i>
+               </span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Map Section -->
+   <div class="contact_section">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-12  padding_0">
+               <div class="map-responsive">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2171.0884356759107!2d24.04621447731001!3d57.032910373584826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eec5c95049819f%3A0xab2fd19293a841bc!2sValsts%20policija%2C%20R%C4%ABgas%20re%C4%A3iona%20p%C4%81rvalde%2C%20R%C4%ABgas%20Kurzemes%20iecirknis%2C%20Bolder%C4%81jas%20administrat%C4%ABvais%20iecirknis!5e0!3m2!1str!2saz!4v1765396429176!5m2!1str!2saz"
+                     width="600" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen
+                     loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Contact Form Section -->
+   <div class="contact_form_section">
+      <div class="container-fluid">
+         <div class="contact_form_wrapper">
+            <div class="contact_form_container">
+               <div class="contact_form_content">
+                  <h1 class="contact_section_title">GET IN TOUCH</h1>
+                  <p class="contact_section_subtitle">Have any questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                  
+                  <form method="post" class="contact_form">
+                     <div class="form_row">
+                        <div class="form_group">
+                           <input type="text" id="name-bt" class="form_input" placeholder="Your Name" name="Name" required>
+                        </div>
+                        <div class="form_group">
+                           <input type="email" id="email-bt" class="form_input" placeholder="Your Email" name="Email" required>
+                        </div>
+                     </div>
+                     <div class="form_row">
+                        <div class="form_group">
+                           <input type="tel" id="phone-bt" class="form_input" placeholder="Phone Number" name="Phone" required>
+                        </div>
+                        <div class="form_group">
+                           <input type="text" id="subject-bt" class="form_input" placeholder="Subject" name="Subject" required>
+                        </div>
+                     </div>
+                     <div class="form_group full_width">
+                        <textarea class="form_textarea" placeholder="Your Message" rows="6" id="message-bt" name="Message" required></textarea>
+                     </div>
+                     <div class="form_submit_wrapper">
+                        <button type="submit" class="submit_btn">SEND MESSAGE</button>
+                     </div>
+                  </form>
+               </div>
+
+               <div class="contact_info_container">
+                  <h2 class="contact_info_title">CONTACT INFORMATION</h2>
+                  
+                  <div class="contact_info_item">
+                     <div class="info_icon">
+                        <i class="fa-solid fa-map-pin"></i>
+                     </div>
+                     <div class="info_content">
+                        <h3>Address</h3>
+                        <p>Stūrmaņu iela 27, Riga, LV-1016, Latvia</p>
+                     </div>
+                  </div>
+
+                  <div class="contact_info_item">
+                     <div class="info_icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                     </div>
+                     <div class="info_content">
+                        <h3>WhatsApp</h3>
+                        <a target="_blank" href="https://wa.me/37122476610">+371 224 766 10</a>
+                     </div>
+                  </div>
+
+                  <div class="contact_info_item">
+                     <div class="info_icon">
+                        <i class="fa-solid fa-envelope"></i>
+                     </div>
+                     <div class="info_content">
+                        <h3>Email</h3>
+                        <a target="_blank" href="mailto:natigsqlserver@gmail.com">natigsqlserver@gmail.com</a>
+                     </div>
+                  </div>
+
+                  <div class="contact_info_item">
+                     <div class="info_icon">
+                        <i class="fa-solid fa-clock"></i>
+                     </div>
+                     <div class="info_content">
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Footer -->
+   <div class="footer-section">
+      <div class="container">
+         <div class="footer-content">
+            <div class="footer-left">
+               <div class="address-section">
+                  <h2 class="adres-text">Addres</h2>
+                  <p>Stūrmaņu iela 27, Riga, LV-1016, Latvia</p>
+               </div>
+               <div class="footer-cards">
+                  <div class="footer-card">
+                     <i class="fa-brands fa-whatsapp"></i>
+                     <a target="_blank" href="https://wa.me/37122476610" class="map_icon">+371 224 766 10
+                     </a>
+                  </div>
+                  <div class="footer-card">
+
+                     <i class="fa-solid fa-envelope"></i>
+                     <a target="_blank" href="mailto:natigsqlserver@gmail.com"
+                        class="map_icon">natigsqlserver@gmail.com</a>
+                  </div>
+               </div>
+            </div>
+            <div class="social-icons">
+               <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+               <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+
+   <!-- footer section end -->
+
+   <!-- Javascript files-->
+   <script src="js/sendEmail.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <!-- javascript -->
+   <script src="js/owl.carousel.js"></script>
+   <script>
+      function openNav() {
+         document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+         document.getElementById("myNav").style.width = "0%";
+      }
+   </script>
+</body>
+
+</html>

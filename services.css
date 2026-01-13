@@ -1,0 +1,389 @@
+/* Services Section */
+.services_section_wrapper {
+    width: 100%;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    padding: 80px 0;
+    font-family: poppins, sans-serif;
+}
+
+.services_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services_header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services_title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #191919;
+    margin-bottom: 15px;
+}
+
+.services_subtitle {
+    font-size: 16px;
+    color: #666666;
+    margin: 0;
+}
+
+.services_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.service_card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid #e05306;
+}
+
+.service_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service_icon_wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e05306 0%, #c93f00 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service_icon_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service_card:hover .service_icon_wrapper img {
+    transform: scale(1.1);
+}
+
+.service_content {
+    padding: 30px;
+}
+
+.service_name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #191919;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.service_description {
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Service Details Section */
+.service_details_section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 80px 0;
+    font-family: poppins, sans-serif;
+}
+
+.service_details_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.detail_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.detail_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail_item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.detail_title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #191919;
+    margin-bottom: 10px;
+}
+
+.detail_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detail_list li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.detail_list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #e05306;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.detail_image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.detail_image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Technology Stack */
+.tech_stack_section {
+    width: 100%;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    padding: 80px 0;
+    font-family: poppins, sans-serif;
+}
+
+.tech_stack_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tech_stack_title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #191919;
+    margin-bottom: 50px;
+}
+
+.tech_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.tech_card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.tech_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    background: linear-gradient(135deg, #e05306 0%, #c93f00 100%);
+}
+
+.tech_icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #e05306;
+    transition: color 0.3s ease;
+}
+
+.tech_card:hover .tech_icon {
+    color: #ffffff;
+}
+
+.tech_name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #191919;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.tech_card:hover .tech_name {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .services_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .tech_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .detail_grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .services_title {
+        font-size: 36px;
+    }
+
+    .detail_title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services_section_wrapper {
+        padding: 60px 0;
+    }
+
+    .services_container {
+        padding: 0 15px;
+    }
+
+    .services_grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .services_header {
+        margin-bottom: 40px;
+    }
+
+    .services_title {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .services_subtitle {
+        font-size: 15px;
+    }
+
+    .service_icon_wrapper {
+        height: 150px;
+    }
+
+    .service_content {
+        padding: 20px;
+    }
+
+    .service_name {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .service_description {
+        font-size: 14px;
+    }
+
+    .tech_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .tech_stack_title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .tech_card {
+        padding: 20px;
+    }
+
+    .tech_icon {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .tech_name {
+        font-size: 14px;
+    }
+
+    .detail_list li {
+        padding-left: 25px;
+        font-size: 14px;
+    }
+
+    .service_details_section {
+        padding: 60px 0;
+    }
+
+    .service_details_container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services_section_wrapper {
+        padding: 40px 0;
+    }
+
+    .services_grid {
+        gap: 15px;
+    }
+
+    .services_title {
+        font-size: 26px;
+    }
+
+    .service_icon_wrapper {
+        height: 120px;
+    }
+
+    .service_content {
+        padding: 15px;
+    }
+
+    .service_name {
+        font-size: 16px;
+    }
+
+    .tech_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech_card {
+        padding: 15px;
+    }
+
+    .tech_icon {
+        font-size: 28px;
+    }
+
+    .detail_list li {
+        padding: 8px 0;
+        padding-left: 25px;
+        font-size: 13px;
+    }
+
+    .detail_title {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Data Module</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+
+
+   <!-- fontAwsome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/siteLogo.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <!-- Styles  -->
+   <link rel="stylesheet" href="./reset.css">
+   <link rel="stylesheet" href="./index.css">
+   <link rel="stylesheet" href="./services.css">
+</head>
+
+<body>
+   <!-- Navbar -->
+   <div class="navbar-section">
+      <div class="container">
+         <div class="navbar">
+            <div class="logo-section">
+               <div class="navlogo"><a href="index.html"><img src="./images/siteLogo.png"></a></div>
+            </div>
+            <div class="nav-menu">
+               <a class="nav-menu-item" href="index.html">HOME</a>
+               <a class="nav-menu-item" href="about.html">ABOUT</a>
+               <a class="nav-menu-item" href="services.html">SERVICES</a>
+               <a class="nav-menu-item" href="projects.html">PROJECTS</a>
+               <a class="nav-menu-item" href="contact.html">CONTACT US</a>
+               <div id="myNav" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <div class="overlay-content">
+                     <a href="index.html">HOME</a>
+                     <a href="about.html">ABOUT</a>
+                     <a href="services.html">SERVICES</a>
+                     <a href="projects.html">PROJECTS</a>
+                     <a href="contact.html">CONTACT US</a>
+                  </div>
+               </div>
+               <span class="hamburger-menu" onclick="openNav()">
+                  <i class="fa-solid fa-bars"></i>
+               </span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Services Section -->
+   <div class="services_section_wrapper">
+      <div class="services_container">
+         <div class="services_header">
+            <h1 class="services_title">OUR SERVICES</h1>
+            <p class="services_subtitle">Comprehensive Agricultural Solutions Using Advanced Drone Technology and AI</p>
+         </div>
+
+         <div class="services_grid">
+            <!-- Service 1 -->
+            <div class="service_card">
+               <div class="service_icon_wrapper">
+                  <img src="images/icon 1.jpg" alt="Plant Health Analysis">
+               </div>
+               <div class="service_content">
+                  <h3 class="service_name">Plant Health & Stress Analysis</h3>
+                  <p class="service_description">With drones equipped with multispectral camera sensors, detect plant diseases and stresses at an early stage. Get real-time insights into crop health and identify problem areas before they spread.</p>
+               </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service_card">
+               <div class="service_icon_wrapper">
+                  <img src="images/icon romb.png" alt="Irrigation Monitoring">
+               </div>
+               <div class="service_content">
+                  <h3 class="service_name">Irrigation Monitoring & Planning</h3>
+                  <p class="service_description">Assess farm health using vegetation and water indices. Get soil moisture maps from satellite and sensor fusion data. Optimize watering strategies with thermal imaging and drone analysis.</p>
+               </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service_card">
+               <div class="service_icon_wrapper">
+                  <img src="images/icon 3.jpg" alt="Soil Analysis">
+               </div>
+               <div class="service_content">
+                  <h3 class="service_name">Field Soil Analysis</h3>
+                  <p class="service_description">Analyze basic soil health in real time using DJI Phantom 4 Pro and other precision agriculture tools. Build AI/ML models on fused datasets for actionable insights.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Technology Stack Section -->
+   <div class="tech_stack_section">
+      <div class="tech_stack_container">
+         <h2 class="tech_stack_title">Our Technology Stack</h2>
+         <div class="tech_grid">
+            <div class="tech_card">
+               <div class="tech_icon">
+                  <i class="fa-solid fa-drone"></i>
+               </div>
+               <p class="tech_name">Drone Technology</p>
+            </div>
+            <div class="tech_card">
+               <div class="tech_icon">
+                  <i class="fa-solid fa-robot"></i>
+               </div>
+               <p class="tech_name">AI & Machine Learning</p>
+            </div>
+            <div class="tech_card">
+               <div class="tech_icon">
+                  <i class="fa-solid fa-satellite"></i>
+               </div>
+               <p class="tech_name">Satellite Imagery</p>
+            </div>
+            <div class="tech_card">
+               <div class="tech_icon">
+                  <i class="fa-solid fa-microchip"></i>
+               </div>
+               <p class="tech_name">IoT Sensors</p>
+            </div>
+            <div class="tech_card">
+               <div class="tech_icon">
+                  <i class="fa-solid fa-mobile"></i>
+               </div>
+               <p class="tech_name">Mobile Apps</p>
+            </div>
+            <div class="tech_card">
+               <div class="tech_icon">
+                  <i class="fa-solid fa-globe"></i>
+               </div>
+               <p class="tech_name">Web Platform</p>
+            </div>
+            <div class="tech_card">
+               <div class="tech_icon">
+                  <i class="fa-solid fa-chart-line"></i>
+               </div>
+               <p class="tech_name">Data Analytics</p>
+            </div>
+            <div class="tech_card">
+               <div class="tech_icon">
+                  <i class="fa-solid fa-layer-group"></i>
+               </div>
+               <p class="tech_name">Multispectral Imaging</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Service Details Section -->
+   <div class="service_details_section">
+      <div class="service_details_container">
+         <div class="detail_grid">
+            <div>
+               <h2 class="detail_title">Plant Health & Stress Analysis</h2>
+               <ul class="detail_list">
+                  <li>Early detection of plant diseases and stress indicators</li>
+                  <li>Multispectral camera sensors for precise analysis</li>
+                  <li>Real-time monitoring and alerts</li>
+                  <li>Actionable recommendations for crop management</li>
+                  <li>Historical data tracking for trend analysis</li>
+               </ul>
+            </div>
+            <div class="detail_image">
+               <img src="images/filip-zrnzevic-QsWG0kjPQRY-unsplash.jpg" alt="Plant analysis">
+            </div>
+         </div>
+
+         <div class="detail_grid">
+            <div class="detail_image">
+               <img src="images/filip-zrnzevic-QsWG0kjPQRY-unsplash.jpg" alt="Irrigation planning">
+            </div>
+            <div>
+               <h2 class="detail_title">Irrigation Monitoring & Planning</h2>
+               <ul class="detail_list">
+                  <li>Vegetation and water index analysis from satellite imagery</li>
+                  <li>Sensor placement recommendations</li>
+                  <li>Soil moisture mapping and fusion technology</li>
+                  <li>Thermal imaging for water stress detection</li>
+                  <li>Optimized watering schedules and cost reduction</li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="detail_grid">
+            <div>
+               <h2 class="detail_title">Field Soil Analysis</h2>
+               <ul class="detail_list">
+                  <li>Real-time soil health assessment using advanced drones</li>
+                  <li>Compatible with DJI Phantom 4 Pro and Marlyn systems</li>
+                  <li>AI/ML model development on fused datasets</li>
+                  <li>Precision agriculture integration</li>
+                  <li>Actionable insights for soil management</li>
+               </ul>
+            </div>
+            <div class="detail_image">
+               <img src="images/filip-zrnzevic-QsWG0kjPQRY-unsplash.jpg" alt="Soil analysis">
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Footer -->
+   <div class="footer-section">
+      <div class="container">
+         <div class="footer-content">
+            <div class="footer-left">
+               <div class="address-section">
+                  <h2 class="adres-text">Addres</h2>
+                  <p>Stūrmaņu iela 27, Riga, LV-1016, Latvia</p>
+               </div>
+               <div class="footer-cards">
+                  <div class="footer-card">
+                     <i class="fa-brands fa-whatsapp"></i>
+                     <a target="_blank" href="https://wa.me/37122476610" class="map_icon">+371 224 766 10
+                     </a>
+                  </div>
+                  <div class="footer-card">
+
+                     <i class="fa-solid fa-envelope"></i>
+                     <a target="_blank" href="mailto:natigsqlserver@gmail.com"
+                        class="map_icon">natigsqlserver@gmail.com</a>
+                  </div>
+               </div>
+            </div>
+            <div class="social-icons">
+               <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+               <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+
+   <!-- footer section end -->
+
+   <!-- Javascript files-->
+   <script src="js/sendEmail.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <!-- javascript -->
+   <script src="js/owl.carousel.js"></script>
+   <script>
+      function openNav() {
+         document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+         document.getElementById("myNav").style.width = "0%";
+      }
+   </script>
+</body>
+
+</html>
